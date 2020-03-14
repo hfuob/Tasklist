@@ -1,18 +1,20 @@
 @extends('layouts.app')
 
 @section('content')
+@section('status')
 
 <!-- ここにページ毎のコンテンツを書く -->
     <h1>id = {{ $task->id }} のタスク詳細ページ</h1>
-
     <table class="table table-bordered">
         <tr>
             <th>id</th>
-            <td>{{ $task->id }}</td>
+            <th>タスク</th>
+            <th>ステータス</th>
         </tr>
         <tr>
-            <th>タスク</th>
+            <td>{{ $task->id }}</td>
             <td>{{ $task->content }}</td>
+            <td>{{ $task->status }}</td>
         </tr>
     </table>
     
