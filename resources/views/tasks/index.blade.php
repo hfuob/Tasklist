@@ -1,7 +1,6 @@
 @extends('layouts.app')
 
 @section('content')
-@section('status')
 
 <!-- ここにページ毎のコンテンツを書く -->
     <h1>タスク一覧</h1>
@@ -26,7 +25,7 @@
             </tbody>
         </table>
     @endif
-    
+
     {!! link_to_route('tasks.create', '新規タスクの投稿', [], ['class' => 'btn btn-primary']) !!}
 
 @endsection

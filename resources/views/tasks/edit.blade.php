@@ -1,7 +1,6 @@
 @extends('layouts.app')
 
 @section('content')
-@section('status')
 
 <!-- ここにページ毎のコンテンツを書く </-->
     <h1>id: {{ $task->id }} のタスク編集ページ</h1>
